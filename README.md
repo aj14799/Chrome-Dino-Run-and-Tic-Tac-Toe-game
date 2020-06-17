@@ -7,7 +7,7 @@ Intresting Dino Run game Coded on python and "0 and X" Game know as Tic Tac Toe 
 
 => pygame :- pip install pygame
 
-## ====================Enjoy Playing =======
+## ====================Enjoy Playing ===============
 
 ### =============== Images ================
 
