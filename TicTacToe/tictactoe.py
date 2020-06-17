@@ -205,14 +205,14 @@ def main():
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
-    pygame.display.set_caption('Ticky')
+    pygame.display.set_caption('Tic Tac Toe')
     BASICFONT = pygame.font.Font('freesansbold.ttf', BASICFONTSIZE)
     NEW_SURF, NEW_RECT = makeText('vs AI', TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 120, WINDOWHEIGHT - 60)
     NEW_SURF2, NEW_RECT2 = makeText('vs Human', TEXTCOLOR, TILECOLOR, WINDOWWIDTH - 240, WINDOWHEIGHT - 60)
     board = [BLANK] * 9
     game_over = False
     x_turn = True
-    msg = "Ticky - Unbeatable Tic Tac Toe AI"
+    msg = "Tic Tac Toe AI"
     drawBoard(board, msg)
     pygame.display.update()
 
@@ -224,14 +224,14 @@ def main():
                 if not coords and NEW_RECT.collidepoint(event.pos):
                     board = [BLANK] * 9
                     game_over = False
-                    msg = "Ticky - Unbeatable Tic Tac Toe AI"
+                    msg = "Tic Tac Toe AI"
                     drawBoard(board, msg)
                     pygame.display.update()
                     two_player = False
                 if not coords and NEW_RECT2.collidepoint(event.pos):
                     board = [BLANK] * 9
                     game_over = False
-                    msg = "Ticky - Unbeatable Tic Tac Toe AI"
+                    msg = "Tic Tac Toe AI"
                     drawBoard(board, msg)
                     pygame.display.update()
                     two_player = True
